@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&display=swap" rel="stylesheet" />
+
+  <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
+
+
+  <!-- Carousel -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/css/glide.core.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/css/glide.theme.min.css
+">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+  <!-- Custom StyleSheet -->
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="./productos.css">
+
+  <title>Phone Shop</title>
+</head>
+
+<body>
+  <header id="header" class="header">
+    <div class="navigation">
+      <div class="container">
+        <nav class="nav">
+          <div class="nav__hamburger">
+            <svg>
+              <use xlink:href="./images/sprite.svg#icon-menu"></use>
+            </svg>
+          </div>
+
+          <div class="nav__logo">
+            <a href="/" class="scroll-link">
+              PHONE
+            </a>
+          </div>
+
+          <div class="nav__menu">
+            <div class="menu__top">
+              <span class="nav__category">PHONE</span>
+              <a href="#" class="close__toggle">
+                <svg>
+                  <use xlink:href="./images/sprite.svg#icon-cross"></use>
+                </svg>
+              </a>
+            </div>
+            <nav class="menu">
+              <a href="index.html" class="nav__link">Inicio</a>
+              <a href="products.html" class="modelos">Productos</a>
+              <a href="#category" class="nav__link scroll-link">Category</a>
+              <a href="crud.php" class="modelos">CRUD</a>
+            </nav>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  
+  <section class="category__section section" id="category">
+    <div class="tab__list">
+      <div class="title__container tabs">
+        <div class="section__titles category__titles ">
+          <div class="section__title filter-btn active" data-id="All Products">
+        
+            <h1 class="primary__title">All Products</h1>
+          </div>
+        </div>
+        <div class="section__titles">
+          <div class="section__title filter-btn" data-id="Trending Products">
+            <span class="dot"></span>
+            <h1 class="primary__title">Trending Products</h1>
+          </div>
+        </div>
+
+        <div class="section__titles">
+          <div class="section__title filter-btn" data-id="Special Products">
+            <span class="dot"></span>
+            <h1 class="primary__title">Special Products</h1>
+          </div>
+        </div>
+
+        <div class="section__titles">
+          <div class="section__title filter-btn" data-id="Featured Products">
+            <span class="dot"></span>
+            <h1 class="primary__title">Featured Products</h1>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="category__container" data-aos="fade-up" data-aos-duration="1200">
+      <div class="category__center"></div>
+    </div>
+  </section>
+
+  <script src="./js/products.js"></script>
+  <script src="./js/index.js"></script>
+  <script src="./js/slider.js"></script>
+</body>
+
+</html>
