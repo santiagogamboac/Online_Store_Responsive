@@ -136,14 +136,13 @@ Navigation
   display: inline-block;
   padding: 10px 15px;
   line-height: normal;
-  font-size: 14px;
+  font-size: 1.8rem;
   transition: all 500ms ease;
   border-bottom: 4px solid transparent;
 }
 
 .menu a:hover {
   color: #40de32;
-  border-bottom: 4px solid #40de32;
 }
 
 .nav__menu{
@@ -151,83 +150,7 @@ Navigation
   display: block;
 }
 
-/* .nav__menu {
-  width: 50%;
-}
 
-.nav__list {
-  display: flex;
-  align-items: center;
-  height: 100%;
-  width: 50%;
-}
-
-.nav__item:not(:last-child) {
-  margin-right: 1.6rem;
-}
-
-.nav__list .nav__link:link,
-.nav__list .nav__link:visited {
-  display: inline-block;
-  font-size: 1.4rem;
-  text-transform: uppercase;
-  color: var(--black);
-  transition: color 0.3s ease-in-out;
-}
-
-.nav__link a{
-  color: #222;
-  text-decoration: none;
-}
-
-.nav__list .nav__link:hover {
-  color: var(--orange);
-}
-
-.nav__icons {
-  display: flex;
-  position: relative;
-}
-
-.nav__icons .icon__item svg {
-  width: 1.6rem;
-  height: 1.6rem;
-}
-
-.nav__icons .icon__item {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0.7rem;
-  border: 1px solid var(--black);
-  border-radius: 50%;
-  transition: background-color 0.3s ease-in-out;
-}
-
-.nav__icons .icon__item:link,
-.nav__icons .icon__item:visited {
-  color: var(--black);
-}
-
-.nav__icons .icon__item:hover {
-  background-color: var(--orange);
-  border: 1px solid var(--black);
-}
-
-.nav__icons .icon__item:not(:last-child) {
-  margin-right: 1rem;
-}
-
-.nav__icons #cart__total {
-  font-size: 1rem;
-  position: absolute;
-  top: 2px;
-  right: -6px;
-  background-color: var(--orange);
-  padding: 0.2rem 0.4rem;
-  border-radius: 100%;
-  color: var(--primaryColor);
-} */
 
 .page__title-area {
   background-color: var(--primaryColor);
@@ -304,7 +227,7 @@ Navigation Media Query
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: var(--orange);
+    background-color: var(--grey);
     padding: 1.8rem 1rem;
   }
 
@@ -683,7 +606,11 @@ Latest Products
   justify-content: center;
   margin: 0 auto 6rem;
   padding: 2rem 0;
-  background-color: var(--primaryColor);
+  background-color: transparent;
+  color: #000;
+  
+  /* border: 1px solid var(--primaryColor); */
+  
 }
 
 .section__titles:not(:last-child) {
@@ -698,7 +625,7 @@ Latest Products
 }
 
 .section__title h1 {
-  font-size: 1.9rem;
+  font-size: 2.5rem;
   font-weight: inherit;
 }
 
@@ -712,6 +639,10 @@ Latest Products
   opacity: 0.6;
   padding-left: 0.5rem;
   transition: opacity 0.3s ease-in-out;
+  
+}
+.primary__title{
+  font-size: 6rem;
 }
 
 span.dot {
@@ -1656,6 +1587,124 @@ News Section
 
 /*
 ======================
+About
+======================
+*/
+.about__container{
+  width: 100%;
+  min-height: 350px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.about__text{
+  display: flex;
+  width: 50%;
+  text-align: center;
+  text-align: justify;
+  align-items: center;
+  padding: 1rem;
+  font-size: 2.5rem;
+}
+.about__image{
+display: flex;
+  width: 50%;
+justify-content: center;
+}
+@media only screen and (max-width: 998px) {
+  .title__container{
+    margin-bottom: 0;
+  }
+  .about__container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .about__text{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 60%;
+    text-align: center;
+    text-align: justify;
+    align-items: center;
+    padding: 1rem;
+    font-size: 2rem;
+  }
+
+  .about__image{
+    display: flex;
+    width: 40%;
+    justify-content: center;
+    margin-top: 1rem;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+  .title__container{
+    margin-bottom: 2.5rem;
+  }
+  .about__container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .about__text{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 80%;
+    text-align: center;
+    text-align: justify;
+    align-items: center;
+    padding: 1rem;
+    font-size: 2rem;
+  }
+
+  .about__image{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 1rem;
+    }
+}
+
+@media only screen and (max-width: 568px) {
+
+  .title__container{
+    margin-bottom: 2.5rem;
+  }
+  .about__container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about__text{
+    display: flex;
+    width: 100%;
+    text-align: center;
+    text-align: justify;
+    align-items: center;
+    padding: 1rem;
+    font-size: 2rem;
+  }
+
+  .about__image{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 1rem;
+    }
+}
+
+/*
+======================
 NewsLetter
 ======================
 */
@@ -1990,7 +2039,7 @@ Product Details
   font-size: 1.4rem;
   color: var(--black2);
   line-height: 2.4rem;
-  margin-bottom: 1.6rem;
+  /* margin-bottom: 1.6rem; */
 }
 
 .product__info .select {
