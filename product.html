@@ -42,29 +42,39 @@
             </a>
           </div>
 
-          <nav class="menu">
-            <a href="#header" class="nav__link scroll-link">Inicio</a>
-            <a href="productos.html" class="modelos">Productos</a>
-            <a href="#about" class="modelos">Nosotros</a>
-          </nav>     
-        </header>
-    <div class="page__title-area">
-      <div class="container">
-        <div class="page__title-container">
-          <ul class="page__titles">
-            <li>
-              <a href="/">
+          <div class="nav__menu">
+            <div class="menu__top">
+              <span class="nav__category">Tienda</span>
+              <a href="#" class="close__toggle">
                 <svg>
-                  <use xlink:href="./images/sprite.svg#icon-home"></use>
+                  <use xlink:href="./images/sprite.svg#icon-cross"></use>
                 </svg>
               </a>
-            </li>
-            <li class="page__title">iPhone 11</li>
-          </ul>
-        </div>
+            </div>
+
+            <nav class="menu">
+              <a href="#header" class="nav__link scroll-link">Inicio</a>
+              <a href="productos.html" class="modelos">Productos</a>
+              <a href="#about" class="modelos">Nosotros</a>
+            </nav>
+  </header>
+  <div class="page__title-area">
+    <div class="container">
+      <div class="page__title-container">
+        <ul class="page__titles">
+          <li>
+            <a href="/">
+              <svg>
+                <use xlink:href="./images/sprite.svg#icon-home"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="page__title">iPhone 11</li>
+        </ul>
       </div>
     </div>
-  
+  </div>
+
 
   <main id="main">
     <div class="container">
@@ -116,7 +126,7 @@
               <div class="price">
                 <span class="new__price">$250.99</span>
               </div>
-              
+
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
                 a doloribus iste natus et facere?
@@ -124,8 +134,13 @@
                 a doloribus iste natus et facere?
               </p>
               <button class="CartBtn" onclick=" comprar()">
-                <span class="IconContainer"> 
-                  <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512" fill="rgb(17, 17, 17)" class="cart"><path d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"></path></svg>
+                <span class="IconContainer">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512" fill="rgb(17, 17, 17)"
+                    class="cart">
+                    <path
+                      d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z">
+                    </path>
+                  </svg>
                 </span>
                 <p class="text">Comprar</p>
               </button>
@@ -139,9 +154,9 @@
                         <option value="red">red</option>
                       </select> -->
                     </div>
-                  
+
                   </li>
-                 
+
                   <!-- <li>
 
                     <div class="input-counter">
@@ -161,7 +176,7 @@
                       </div>
                     </div>
                   </li> -->
-                  
+
 
                   <li>
                     <span>Subtotal:</span>
@@ -180,7 +195,7 @@
                     <a href="#" class="in-stock">Disponible</a>
                   </li>
                 </ul>
-                
+
                 <div class="product-info__btn">
                   <!-- <a href="#">
                     <span>
@@ -217,7 +232,7 @@
 
             <div class="section__titles category__titles ">
               <div class="section__title detail-btn active" data-id="description">
-               
+
                 <h1 class="primary__title">Descripción</h1>
               </div>
             </div>
@@ -231,7 +246,7 @@
 
             <div class="section__titles">
               <div class="section__title detail-btn" data-id="shipping">
-             
+
                 <h1 class="primary__title">Detalles del envío</h1>
               </div>
             </div>
@@ -301,7 +316,7 @@
       <section class="section related__products">
         <div class="title__container">
           <div class="section__title filter-btn active">
-          
+
             <h1 class="primary__title">Productos relacionados</h1>
           </div>
         </div>
@@ -316,61 +331,28 @@
                     </div>
                     <div class="product__footer">
                       <h3>Samsung Galaxy</h3>
-                      
+
                       <div class="product__price">
                         <h4>$900</h4>
                       </div>
                       <a href="product.html">
                         <button class="CartBtn">
-                          <span class="IconContainer"> 
-                            <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512" fill="rgb(17, 17, 17)" class="cart"><path d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"></path></svg>
+                          <span class="IconContainer">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512"
+                              fill="rgb(17, 17, 17)" class="cart">
+                              <path
+                                d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z">
+                              </path>
+                            </svg>
                           </span>
                           <p class="text">Add to Cart</p>
                         </button>
                       </a>
                     </div>
-                    
+
                   </div>
                 </li>
 
-                <li class="glide__slide">
-                  <div class="product">
-                    <div class="product__header">
-                      <a href="#"><img src="/images/products/iPhone/iphone6.jpeg" alt="product"></a>
-                    </div>
-                    <div class="product__footer">
-                      <h3>Apple iPhone 11</h3>
-                      
-                      <div class="product__price">
-                        <h4>$750</h4>
-                      </div>
-                      <a href="#"><button type="submit" class="product__btn">Add To Cart</button></a>
-                    </div>
-                    <ul>
-                      <li>
-                        <a data-tip="Quick View" data-place="left" href="#">
-                          <svg>
-                            <use xlink:href="./images/sprite.svg#icon-eye"></use>
-                          </svg>
-                        </a>
-                      </li>
-                      <li>
-                        <a data-tip="Add To Wishlist" data-place="left" href="#">
-                          <svg>
-                            <use xlink:href="./images/sprite.svg#icon-heart-o"></use>
-                          </svg>
-                        </a>
-                      </li>
-                      <li>
-                        <a data-tip="Add To Compare" data-place="left" href="#">
-                          <svg>
-                            <use xlink:href="./images/sprite.svg#icon-loop2"></use>
-                          </svg>
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                </li>
                 <li class="glide__slide">
                   <div class="product">
                     <div class="product__header">
@@ -378,29 +360,24 @@
                     </div>
                     <div class="product__footer">
                       <h3>Samsung Galaxy</h3>
-                      <div class="rating">
-                        <svg>
-                          <use xlink:href="./images/sprite.svg#icon-star-full"></use>
-                        </svg>
-                        <svg>
-                          <use xlink:href="./images/sprite.svg#icon-star-full"></use>
-                        </svg>
-                        <svg>
-                          <use xlink:href="./images/sprite.svg#icon-star-full"></use>
-                        </svg>
-                        <svg>
-                          <use xlink:href="./images/sprite.svg#icon-star-full"></use>
-                        </svg>
-                        <svg>
-                          <use xlink:href="./images/sprite.svg#icon-star-empty"></use>
-                        </svg>
-                      </div>
                       <div class="product__price">
                         <h4>$850</h4>
                       </div>
-                      <a href="#"><button type="submit" class="product__btn">Add To Cart</button></a>
+                      <a href="product.html">
+                        <button class="CartBtn">
+                          <span class="IconContainer">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512"
+                              fill="rgb(17, 17, 17)" class="cart">
+                              <path
+                                d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z">
+                              </path>
+                            </svg>
+                          </span>
+                          <p class="text">Add to Cart</p>
+                        </button>
+                      </a>
                     </div>
-                    
+
                   </div>
                 </li>
                 <li class="glide__slide">
@@ -627,7 +604,7 @@
                     </div>
                     <div class="product__footer">
                       <h3>Sony WH-CH510</h3>
-                      
+
                       <div class="product__price">
                         <h4>$250</h4>
                       </div>
@@ -734,8 +711,7 @@
       <section class="section latest__products">
         <div class="title__container">
           <div class="section__title filter-btn active" data-id="Latest Products">
-            <span class="dot"></span>
-            <h1 class="primary__title">Latest Products</h1>
+            <h1 class="primary__title">Últimos productos</h1>
           </div>
         </div>
         <div class="container" data-aos="fade-up" data-aos-duration="1200">
@@ -749,51 +725,23 @@
                     </div>
                     <div class="product__footer">
                       <h3>Apple iPhone 11</h3>
-                      <div class="rating">
-                        <svg>
-                          <use xlink:href="./images/sprite.svg#icon-star-full"></use>
-                        </svg>
-                        <svg>
-                          <use xlink:href="./images/sprite.svg#icon-star-full"></use>
-                        </svg>
-                        <svg>
-                          <use xlink:href="./images/sprite.svg#icon-star-full"></use>
-                        </svg>
-                        <svg>
-                          <use xlink:href="./images/sprite.svg#icon-star-full"></use>
-                        </svg>
-                        <svg>
-                          <use xlink:href="./images/sprite.svg#icon-star-empty"></use>
-                        </svg>
-                      </div>
                       <div class="product__price">
                         <h4>$750</h4>
                       </div>
-                      <a href="#"><button type="submit" class="product__btn">Add To Cart</button></a>
+                      <a href="product.html">
+                        <button class="CartBtn">
+                          <span class="IconContainer">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512"
+                              fill="rgb(17, 17, 17)" class="cart">
+                              <path
+                                d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z">
+                              </path>
+                            </svg>
+                          </span>
+                          <p class="text">Add to Cart</p>
+                        </button>
+                      </a>
                     </div>
-                    <ul>
-                      <li>
-                        <a data-tip="Quick View" data-place="left" href="#">
-                          <svg>
-                            <use xlink:href="./images/sprite.svg#icon-eye"></use>
-                          </svg>
-                        </a>
-                      </li>
-                      <li>
-                        <a data-tip="Add To Wishlist" data-place="left" href="#">
-                          <svg>
-                            <use xlink:href="./images/sprite.svg#icon-heart-o"></use>
-                          </svg>
-                        </a>
-                      </li>
-                      <li>
-                        <a data-tip="Add To Compare" data-place="left" href="#">
-                          <svg>
-                            <use xlink:href="./images/sprite.svg#icon-loop2"></use>
-                          </svg>
-                        </a>
-                      </li>
-                    </ul>
                   </div>
                 </li>
                 <li class="glide__slide">
@@ -803,51 +751,23 @@
                     </div>
                     <div class="product__footer">
                       <h3>Samsung Galaxy</h3>
-                      <div class="rating">
-                        <svg>
-                          <use xlink:href="./images/sprite.svg#icon-star-full"></use>
-                        </svg>
-                        <svg>
-                          <use xlink:href="./images/sprite.svg#icon-star-full"></use>
-                        </svg>
-                        <svg>
-                          <use xlink:href="./images/sprite.svg#icon-star-full"></use>
-                        </svg>
-                        <svg>
-                          <use xlink:href="./images/sprite.svg#icon-star-full"></use>
-                        </svg>
-                        <svg>
-                          <use xlink:href="./images/sprite.svg#icon-star-empty"></use>
-                        </svg>
-                      </div>
                       <div class="product__price">
                         <h4>$900</h4>
                       </div>
-                      <a href="#"><button type="submit" class="product__btn">Add To Cart</button></a>
+                      <a href="product.html">
+                        <button class="CartBtn">
+                          <span class="IconContainer">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512"
+                              fill="rgb(17, 17, 17)" class="cart">
+                              <path
+                                d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z">
+                              </path>
+                            </svg>
+                          </span>
+                          <p class="text">Add to Cart</p>
+                        </button>
+                      </a>
                     </div>
-                    <ul>
-                      <li>
-                        <a data-tip="Quick View" data-place="left" href="#">
-                          <svg>
-                            <use xlink:href="./images/sprite.svg#icon-eye"></use>
-                          </svg>
-                        </a>
-                      </li>
-                      <li>
-                        <a data-tip="Add To Wishlist" data-place="left" href="#">
-                          <svg>
-                            <use xlink:href="./images/sprite.svg#icon-heart-o"></use>
-                          </svg>
-                        </a>
-                      </li>
-                      <li>
-                        <a data-tip="Add To Compare" data-place="left" href="#">
-                          <svg>
-                            <use xlink:href="./images/sprite.svg#icon-loop2"></use>
-                          </svg>
-                        </a>
-                      </li>
-                    </ul>
                   </div>
                 </li>
                 <li class="glide__slide">
@@ -987,7 +907,7 @@
                       </div>
                       <a href="#"><button type="submit" class="product__btn">Add To Cart</button></a>
                     </div>
-                    
+
                   </div>
                 </li>
                 <li class="glide__slide">
@@ -997,7 +917,7 @@
                     </div>
                     <div class="product__footer">
                       <h3>Sony WH-CH510</h3>
-                      
+
                       <div class="product__price">
                         <h4>$300</h4>
                       </div>
@@ -1258,15 +1178,7 @@
     <div class="container">
       <div class="footer__top">
         <div class="footer-top__box">
-          <h3>EXTRAS</h3>
-          <a href="#">Brands</a>
-          <a href="#">Gift Certificates</a>
-          <a href="#">Affiliate</a>
-          <a href="#">Specials</a>
-          <a href="#">Site Map</a>
-        </div>
-        <div class="footer-top__box">
-          <h3>INFORMATION</h3>
+          <h3>INFORMACIÓN</h3>
           <a href="#">About Us</a>
           <a href="#">Privacy Policy</a>
           <a href="#">Terms & Conditions</a>
@@ -1274,15 +1186,7 @@
           <a href="#">Site Map</a>
         </div>
         <div class="footer-top__box">
-          <h3>MY ACCOUNT</h3>
-          <a href="#">My Account</a>
-          <a href="#">Order History</a>
-          <a href="#">Wish List</a>
-          <a href="#">Newsletter</a>
-          <a href="#">Returns</a>
-        </div>
-        <div class="footer-top__box">
-          <h3>CONTACT US</h3>
+          <h3>CONTACTO</h3>
           <div>
             <span>
               <svg>
@@ -1305,7 +1209,7 @@
                 <use xlink:href="./images/sprite.svg#icon-phone"></use>
               </svg>
             </span>
-            456-456-4512
+            +57
           </div>
           <div>
             <span>
@@ -1313,7 +1217,7 @@
                 <use xlink:href="./images/sprite.svg#icon-paperplane"></use>
               </svg>
             </span>
-            Dream City, USA
+            Bogotá, Colombia
           </div>
         </div>
       </div>
