@@ -24,7 +24,9 @@ window.addEventListener("DOMContentLoaded", async function () {
 const displayProductItems = items => {
   let displayProduct = items.map(
     product => ` 
+    
                   <div class="product category__products">
+                  <a href="product.html">
                     <div class="product__header">
                       <img src=${product.image} alt="product">
                     </div>
@@ -44,6 +46,7 @@ const displayProductItems = items => {
                         </button>
                       </a>
                     </div>
+                    </a>
                   </div>
                   `
   );

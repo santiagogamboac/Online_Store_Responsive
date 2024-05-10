@@ -19,6 +19,8 @@ Reset
   --yellow: #ffcc00;
   --green: #59b210;
   --blue: rgb(56, 10, 223);
+  --aguamarinadark : #008F8C;
+  --aguadarkdark : #0FC2C0;
 }
 
 * {
@@ -142,7 +144,7 @@ Navigation
 }
 
 .menu a:hover {
-  color: #40de32;
+  color: #008F8C;
 }
 
 .nav__menu{
@@ -372,12 +374,12 @@ Hero Area
   display: inline-block;
   font-weight: 700;
   font-size: 1.4rem;
-  background-color: var(--black);
+  background-color: var(--aguamarinadark);
   color: var(--primaryColor);
   cursor: pointer;
   margin-top: 1rem;
   padding: 1.5rem 4rem;
-  border: 1px solid var(--black);
+  border: 1px solid var(--aguamarinadark);
   transition: all 0.3s ease-in-out;
 }
 
@@ -388,7 +390,7 @@ Hero Area
 .hero__left .hero__btn:hover {
   font-weight: 700;
   background-color: transparent;
-  color: var(--black);
+  color: var(--aguamarinadark);
 }
 
 .hero__left h1 {
@@ -528,15 +530,15 @@ Collection
   padding: 1rem 1.4rem;
   margin-top: 1.3rem;
   border-radius: 3rem;
-  border: 2px solid var(--secondaryColor);
+  border: 2px solid var(--aguamarinadark);
   color: var(--primaryColor);
-  background-color: var(--secondaryColor);
+  background-color: var(--aguamarinadark);
   transition: all 0.3s ease-in-out;
 }
 
 .collection__content a:hover {
   background-color: transparent;
-  color: var(--secondaryColor);
+  color: var(--aguamarinadark);
 }
 
 /*
@@ -643,6 +645,17 @@ Latest Products
 }
 .primary__title{
   font-size: 6rem;
+  color: var(--aguamarinadark);
+}
+
+.titulo__container{
+  display: flex;
+  min-height: 40px;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  padding: 20px;
+  margin: 20px;
 }
 
 span.dot {
@@ -682,6 +695,22 @@ span.dot::before {
 .product {
   position: relative;
   text-align: center;
+  transition-duration: 0.5s;
+  border-radius: 30px;
+  border: 0px #ccc;
+}
+
+.product a{
+  color: #000;
+}
+
+.product:hover{
+ border: solid 1px #0FC2C0;
+
+}
+
+.product:hover{
+  transform: scale(1.1);
 }
 
 .product ul svg {
@@ -1590,11 +1619,16 @@ News Section
 About
 ======================
 */
+.section_about {
+  background: var(--primaryColor);
+}
+
 .about__container{
   width: 100%;
   min-height: 350px;
   display: flex;
   flex-wrap: wrap;
+  margin-bottom: 4rem;
 }
 .about__text{
   display: flex;
@@ -1603,7 +1637,7 @@ About
   text-align: justify;
   align-items: center;
   padding: 1rem;
-  font-size: 2.5rem;
+  font-size: 2rem;
 }
 .about__image{
 display: flex;
