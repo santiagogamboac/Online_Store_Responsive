@@ -61,3 +61,10 @@
     transform: scale(0.95);
     transition-duration: .5s;
   }
+
+  @media only screen and (max-width: 568px) {
+    .CartBtn {
+      width: 100px;
+      
+    }
+  }
