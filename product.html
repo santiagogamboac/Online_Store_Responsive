@@ -21,6 +21,9 @@
   <!-- Custom StyleSheet -->
   <link rel="stylesheet" href="styles.css" />
   <link rel="stylesheet" href="button.css">
+  <link rel="stylesheet" href="modal.css">
+  
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   <style>
     body {
       background-color: #f1f1f1;
@@ -137,7 +140,7 @@
                 dolor sit amet consectetur adipisicing elit. Sunt
                 a doloribus iste natus et facere?
               </p>
-              <button class="CartBtn" onclick=" comprar()">
+              <button class="CartBtn" id="openModalBtn" >
                 <span class="IconContainer">
                   <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512" fill="rgb(17, 17, 17)"
                     class="cart">
@@ -241,13 +244,6 @@
               </div>
             </div>
 
-            <!-- <div class="section__titles">
-              <div class="section__title detail-btn" data-id="reviews">
-                
-                <h1 class="primary__title">Reviews</h1>
-              </div>
-            </div> -->
-
             <div class="section__titles">
               <div class="section__title detail-btn" data-id="shipping">
 
@@ -315,6 +311,20 @@
           </div>
         </div>
       </section>
+
+      <div id="myModal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+    
+          <div class="contatiner__modal">
+            <h2>Escanea el sigiuente QR</h2>
+            <img src="./images/QR.jpeg" alt="Imagen">
+            <h2>Tras realizar la trasnferencia confirma tu pago dando click en el sigiuente boton</h2>
+            <button id="sendEmailBtn" onclick=" comprar()">Confirma tu pago</button>
+          </div>
+    
+        </div>
+      </div>
   </main>
 
   <!-- Footer -->
@@ -379,6 +389,8 @@
 
   <!-- End Footer -->
 
+
+
   <!-- Go To -->
 
   <a href="#header" class="goto-top scroll-link">
@@ -398,6 +410,8 @@
   <script src="./js/index.js"></script>
   <script src="./js/slider.js"></script>
   <script src="./js/comprar.js"></script>
+
+
 </body>
 
 </html>
